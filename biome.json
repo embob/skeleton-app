@@ -21,7 +21,9 @@
   },
   "overrides": [
     {
-      "includes": ["dist/**"],
+      "includes": [
+        "dist/**"
+      ],
       "linter": {
         "enabled": false
       },
