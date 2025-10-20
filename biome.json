@@ -1,5 +1,8 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+  "files": {
+    "ignoreUnknown": false
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -13,6 +16,18 @@
     }
   },
   "vcs": {
-    "enabled": true
-  }
+    "enabled": true,
+    "clientKind": "git"
+  },
+  "overrides": [
+    {
+      "includes": ["dist/**"],
+      "linter": {
+        "enabled": false
+      },
+      "formatter": {
+        "enabled": false
+      }
+    }
+  ]
 }
